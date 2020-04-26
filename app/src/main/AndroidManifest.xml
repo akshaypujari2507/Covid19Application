@@ -1,22 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.covid19application">
+    package="com.covid19india">
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/virus_icon"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/virus_icon"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".DistrictActivity"></activity>
+        <activity android:name="com.covid19india.WebViewActivity"></activity>
+        <activity android:name="com.covid19india.DistrictActivity" />
         <activity
-            android:name=".StatesActivity"
+            android:name="com.covid19india.StatesActivity"
             android:label="Statewise" />
-        <activity android:name=".DashboardActivity">
+        <activity
+            android:name="com.covid19india.ErrorActivity"
+            android:label="Error" />
+        <activity android:name="com.covid19india.DashboardActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
